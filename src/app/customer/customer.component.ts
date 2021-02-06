@@ -7,7 +7,12 @@ import { Component, OnInit } from "@angular/core";
 })
 export class CustomerComponent implements OnInit {
   constructor() {}
-
-  strName = "Ernest - The Best!";
-  ngOnInit() {}
+  strName: string;
+  strEmail: string;
+  strDOB: Date;
+  ngOnInit() {
+    this.strName = "Ernest - The Best!";
+    this.strEmail = "eredwardsjm@gmail.com";
+    this.strDOB = new Date("1982/10/07");
+  }
 }
